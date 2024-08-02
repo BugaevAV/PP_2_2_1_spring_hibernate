@@ -47,9 +47,9 @@ public class MainApp {
          System.out.println();
       }
 
-      User userWithBMW = carService.getUser("BMW", 5);
-      User userWithGAZ = carService.getUser("Газ", 66);
-      User userWithAudi = carService.getUser("Audi", 8);
+      User userWithBMW = userService.getUser("BMW", 5);
+      User userWithGAZ = userService.getUser("Газ", 66);
+      User userWithAudi = userService.getUser("Audi", 8);
       for (User user : new User[] {userWithBMW, userWithGAZ, userWithAudi}) {
          System.out.println("Владелец " + user.getCar() + " : " + user);
       }
